@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payoff Lab: game theory, simulated</title>
+  <meta name="description" content="Payoff Lab is a YouTube channel that turns game theory into agent-based simulations you can watch.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="inner">
+      <img src="avatar.png" alt="Payoff Lab logo: a red hawk blob and a blue dove blob">
+      <a class="name" href="./">PAYOFF LAB</a>
+      <nav>
+        <a href="./" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://www.youtube.com/@PayoffLabSim">YouTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <img class="banner" src="banner.jpg" alt="Payoff Lab banner: a crowd of hawk and dove blobs around the words Payoff Lab, game theory, simulated">
+
+  <main>
+    <h1>Game theory, simulated.</h1>
+    <div class="bars"><span class="h"></span><span class="d"></span></div>
+    <p class="lead">Payoff Lab is a YouTube channel that turns game theory into experiments you can watch.</p>
+
+    <p>In every video, hundreds of simple agents each follow one rule: fight, share, cheat, or cooperate.
+    They compete for food, the winners have more offspring, and we watch which strategy takes over.
+    Every video is a real simulation. The rules are shown on screen, the run we show is a typical one
+    rather than a lucky one, and the result is checked against the published maths.</p>
+
+    <p><a class="button" href="https://www.youtube.com/@PayoffLabSim">Watch on YouTube</a></p>
+
+    <h2>Latest video</h2>
+    <div class="card">
+      <h3><a href="https://youtu.be/chNGoUj3KSw">8 Hawks, 72 Doves: Who Takes Over?</a></h3>
+      <p>The Hawk-Dove game: aggressive hawks and peaceful doves share a world with limited food.
+      Hawks win fights but pay for them in injuries. The simulation shows why aggression rises,
+      then stops at a share set by the value of the food and the cost of a fight.</p>
+    </div>
+
+    <h2>Coming up</h2>
+    <p>Hawk-Dove-Bourgeois ("fight only if you got there first"), the iterated Prisoner's Dilemma
+    tournament, Tit for Tat with mistakes, and the tragedy of the commons.</p>
+
+    <h2 id="uploader">Payoff Lab Uploader</h2>
+    <p>Payoff Lab Uploader is the small tool the channel's owner uses to publish these videos.
+    It is a command-line program that runs on the owner's own computer and signs in with Google
+    to use the YouTube Data API. It is not a public service: it has one user, the owner of the
+    Payoff Lab channel.</p>
+    <p>What it does with the YouTube account it is signed in to:</p>
+    <ul>
+      <li>reads the channel's ID and name, to refuse uploads to any channel other than Payoff Lab;</li>
+      <li>uploads a finished video as <strong>private</strong>, with its title, description, tags and chapters;</li>
+      <li>sets the video's thumbnail and uploads its English captions;</li>
+      <li>reads the video's processing and privacy status;</li>
+      <li>makes the video public, or schedules it, only when the owner runs the publish command.</li>
+    </ul>
+    <p>It does not read, change or delete anything else on the account. How it handles Google user
+    data is described in the <a href="privacy.html">Privacy Policy</a>.</p>
+  </main>
+
+  <footer>
+    <div class="inner">
+      Payoff Lab &middot; <a href="privacy.html">Privacy Policy</a> &middot;
+      Contact: <a href="mailto:leesun190590@gmail.com">leesun190590@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
