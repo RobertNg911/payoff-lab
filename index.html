@@ -35,7 +35,12 @@
 
     <p><a class="button" href="https://www.youtube.com/@PayoffLabSim">Watch on YouTube</a></p>
 
-    <h2>Latest video</h2>
+    <h2>Latest videos</h2>
+    <div class="card">
+      <h3><a href="https://youtu.be/GdYOqBVZ1Cs">This Rule Beat Hawks in 39 of 40 Worlds</a></h3>
+      <p>Hawk-Dove-Bourgeois: a strategy that fights only when it got to the food first, decided by
+      a coin flip, beats both hawks and doves. And the backwards rule works just as well.</p>
+    </div>
     <div class="card">
       <h3><a href="https://youtu.be/chNGoUj3KSw">8 Hawks, 72 Doves: Who Takes Over?</a></h3>
       <p>The Hawk-Dove game: aggressive hawks and peaceful doves share a world with limited food.
@@ -44,19 +49,21 @@
     </div>
 
     <h2>Coming up</h2>
-    <p>Hawk-Dove-Bourgeois ("fight only if you got there first"), the iterated Prisoner's Dilemma
-    tournament, Tit for Tat with mistakes, and the tragedy of the commons.</p>
+    <p>The iterated Prisoner's Dilemma tournament, Tit for Tat with mistakes, and the tragedy of
+    the commons.</p>
 
     <h2 id="uploader">Payoff Lab Uploader</h2>
-    <p>Payoff Lab Uploader is the small tool the channel's owner uses to publish these videos.
-    It is a command-line program that runs on the owner's own computer and signs in with Google
-    to use the YouTube Data API. It is not a public service: it has one user, the owner of the
-    Payoff Lab channel.</p>
+    <p>Payoff Lab Uploader is the small tool the channel's owner uses to publish videos to two
+    YouTube channels: Payoff Lab, and <a href="https://www.youtube.com/@LamplitWords">Lamplit Words</a>,
+    a channel of readings from public-domain philosophy. It is a command-line program that runs on
+    the owner's own computer and signs in with Google to use the YouTube Data API. It is not a
+    public service: it has one user, the owner of both channels.</p>
     <p>What it does with the YouTube account it is signed in to:</p>
     <ul>
-      <li>reads the channel's ID and name, to refuse uploads to any channel other than Payoff Lab;</li>
+      <li>reads the channel's ID and name, to refuse an upload unless it goes to the intended channel;</li>
       <li>uploads a finished video as <strong>private</strong>, with its title, description, tags and chapters;</li>
       <li>sets the video's thumbnail and uploads its English captions;</li>
+      <li>schedules a batch of approved videos to go public at set times;</li>
       <li>reads the video's processing and privacy status;</li>
       <li>makes the video public, or schedules it, only when the owner runs the publish command.</li>
     </ul>

@@ -23,21 +23,22 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="lead">Effective October 29, 2026</p>
+    <p class="lead">Effective October 29, 2026. Updated October 29, 2026: the app now also serves the Lamplit Words channel.</p>
 
-    <p>This policy covers two things run by the owner of the Payoff Lab YouTube channel
-    (“we”, “us”):</p>
+    <p>This policy covers two things run by the owner of the Payoff Lab and Lamplit Words YouTube
+    channels (“we”, “us”):</p>
     <ul>
       <li><strong>Payoff Lab Uploader</strong> (“the app”), a command-line tool that uploads and
-      publishes Payoff Lab videos through the YouTube Data API;</li>
+      publishes videos for those two channels through the YouTube Data API;</li>
       <li><strong>this website</strong>.</li>
     </ul>
-    <p>Watching Payoff Lab videos on YouTube is covered by YouTube's own terms and Google's privacy
+    <p>Watching Payoff Lab or Lamplit Words videos on YouTube is covered by YouTube's own terms and Google's privacy
     policy, not by this page.</p>
 
     <h2>1. Who uses the app</h2>
     <p>The app runs only on the channel owner's own computer. It is not offered to the public, and
-    the only Google account that signs in to it is the account that manages the Payoff Lab channel.
+    the only Google account that signs in to it is the owner's account, which manages both
+    channels. Each channel is signed in separately.
     It has no server: nothing it handles is sent to us or to anyone other than Google.</p>
 
     <h2>2. Google user data the app accesses</h2>
@@ -53,12 +54,13 @@
 
     <h2>3. How the data is stored</h2>
     <ul>
-      <li><strong>Sign-in token.</strong> Google's OAuth access and refresh token is saved in one
-      file on the owner's computer (<code>~/.config/game-theory-channel/token.json</code>), readable
+      <li><strong>Sign-in tokens.</strong> Google's OAuth access and refresh token for each channel
+      is saved in one file on the owner's computer (<code>~/.config/game-theory-channel/token.json</code>
+      for Payoff Lab, <code>~/.config/quotes-channel/token.json</code> for Lamplit Words), readable
       only by the owner's user account (file mode 600). It is never printed, logged, committed to
       source control or sent anywhere except to Google.</li>
-      <li><strong>Channel ID and name.</strong> Saved next to the token, and used to refuse uploads
-      to any channel other than Payoff Lab.</li>
+      <li><strong>Channel ID and name.</strong> Saved next to each token, and used to refuse an
+      upload unless it goes to the one channel that sign-in is meant for.</li>
       <li><strong>Upload records.</strong> For each uploaded video, the app saves its YouTube video ID,
       link, channel ID, upload time and a checksum of the video file, so the same video is never
       uploaded twice.</li>
@@ -84,8 +86,9 @@
       <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> or
       <a href="https://security.google.com/settings/security/permissions">Google security settings</a>.
       After that, the saved token no longer works.</li>
-      <li>Delete the folder <code>~/.config/game-theory-channel/</code> to remove the token and the
-      saved channel details from the computer.</li>
+      <li>Delete the folders <code>~/.config/game-theory-channel/</code> and
+      <code>~/.config/quotes-channel/</code> to remove the tokens and the saved channel details from
+      the computer.</li>
       <li>Uploaded videos are managed in YouTube Studio like any other video.</li>
     </ul>
 
@@ -97,7 +100,7 @@
     Privacy Statement</a>. The embedded links to YouTube take you to YouTube, where YouTube's terms apply.</p>
 
     <h2>8. Children</h2>
-    <p>The app is used only by the channel owner. Payoff Lab videos are not made for children,
+    <p>The app is used only by the channel owner. Payoff Lab and Lamplit Words videos are not made for children,
     and we do not knowingly collect personal information from children.</p>
 
     <h2>9. Changes</h2>
