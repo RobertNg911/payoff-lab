@@ -46,11 +46,11 @@
     <table>
       <tr><th>Scope</th><th>What the app uses it for</th></tr>
       <tr><td><code>youtube.upload</code></td><td>Uploading a video file with its title, description and tags, and setting its thumbnail.</td></tr>
-      <tr><td><code>youtube.force-ssl</code></td><td>Reading the signed-in channel's ID and name; uploading English captions; reading a video's processing and privacy status; changing a video from private to public or scheduling it, when the owner asks.</td></tr>
+      <tr><td><code>youtube.force-ssl</code></td><td>Reading the signed-in channel's ID and name; uploading English captions; reading a video's processing and privacy status; changing a video from private to public or scheduling it, when the owner asks; deleting a video on the signed-in channel, only when the owner names that video and asks for it to be deleted.</td></tr>
     </table>
     <p>The app reads only: the signed-in channel's ID and name, and the status and details of
     videos the app itself uploaded. It does not read subscribers, comments, watch history, analytics, email,
-    contacts or any other data, and it does not delete anything.</p>
+    contacts or any other data. It deletes a video only when the owner names it and asks for it to be removed, and nothing else.</p>
 
     <h2>3. How the data is stored</h2>
     <ul>
